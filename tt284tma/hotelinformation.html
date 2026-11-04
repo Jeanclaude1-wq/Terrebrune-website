@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terrebrune Hotel</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="cstyle.css">
+    <style>
+        .tooltip {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .tooltip .tooltiptext {
+            width: 100% !important;
+            color: black;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px;
+            z-index: 1;
+            display: none;
+            transition: all 0.3s;
+            text-align: left;
+            font-size: 14px;
+            transition: all 1s linear;
+        }
+
+        .tooltip .room-name {
+            display: inline-block;
+        }
+
+        .tooltip:hover .tooltiptext {
+            display: flex;
+        }
+
+        #accommodations {
+            display: flex;
+            margin-bottom: 2em;
+        }
+
+        #accommodations ul {
+            width: 40%;
+        }
+
+        .image {
+            width: 60%;
+            height: 420px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background: url("./deluxe.jpg");
+            background-position: center;
+            transition: all 1s linear;
+        }
+
+        .tooltip a {
+            font-size: 20px;
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="menu">
+        <div class="logo"><img src="loghot.png" alt="logo"></div>
+
+        <nav class="logo-name">
+            <a href="home.html">Home </a>
+            <a href="announcements.html">Announcements </a>
+            <a href="hotelinformation.html">Hotel Information </a>
+            <a href="book_your_room.html">Book Your Room </a>
+            <a href="contact.html">Contact us</a>
+        </nav>
+
+    </div>
+
+    <br><br><br><br><br>
+    <h2>Our Rooms</h2>
+    <h3 style="width: 100%; text-align: center; margin-bottom: 2.5em;">Indulge into the comfort of our rooms</h3>
+    <section id="accommodations" style="font-size:17pt;">
+        <ul>
+            <li class="tooltip">
+                <a href="deluxe.html" onmouseenter="show_image('./deluxe.jpg')" class="room-name">Deluxe Room</a>
+                <span class="tooltiptext room-details">25 SQM<br>balcony or garden</span>
+
+            </li>
+            <br>
+
+            <li class="tooltip">
+                <a href="excecutive.html" onmouseenter="show_image('./executive.jpg')" class="room-name">Executive
+                    Room</a>
+                <span class="tooltiptext room-details">39 SQM</span>
+            </li>
+            <br>
+
+            <li class="tooltip">
+                <a href="majesctic.html" onmouseenter="show_image('./majestic.jpg')" class="room-name">Majestic
+                    Room</a>
+                <span class="tooltiptext room-details">44 SQM</span>
+            </li>
+            <br>
+
+            <li class="tooltip">
+                <a href="captainsuite.html" onmouseenter="show_image('./captainsuite.jpg')" class="room-name">Captain
+                    Suite</a>
+                <span class="tooltiptext room-details">50 SQM</span>
+            </li>
+            <br>
+            <li class="tooltip">
+                <a href="terrebrunesuite.html" onmouseenter="show_image('./terrebrunesuite.jpg')"
+                    class="room-name">TerrebruneSuite</a>
+                <span class="tooltiptext room-details">70 SQM<br>balcony or garden</span>
+            </li>
+            <br>
+            <h5>The exquisite luxury of Terrebrune with the outmost privacy</h5>
+            <br>
+            <li class="tooltip">
+                <a href="residentialsuite.html" onmouseenter="show_image('./residentialsuite.jpg')"
+                    class="room-name">Residential Suite</a>
+                <span class="tooltiptext room-details">320 SQM<br>private terrace and balcony</span>
+            </li>
+        </ul>
+        <div class="image" id="image_id"></div>
+    </section>
+
+
+
+    <div class="container1" style="background-color:grey;justify-content: space-evenly;object-fit: contain;">
+        <h1>Dining:</h1>
+        <h3 style="text-align: left;
+        margin-left: 86px;
+        margin-bottom: -37px;">"Chez Michel" Lebanese Restaurant</h3>
+        <h3 style="text-align: center;
+        margin-right: 145px;
+        margin-bottom: -40px;">"Les Caves de Chez Michel" French Restaurant</h3>
+        <h3 style="text-align: right;
+        margin-right: 170px;
+        margin-bottom: -40px;">"Le Resto" International Restaurant in Terrebrune</h3>
+        <div id="chezmichel">
+
+
+            <a href="https://www.instagram.com/chezmichelfaqra/" target="_blank" class="icon-link"><img
+                    src="chezmichel.png" alt="chezmichel" class="icon" style="width:30%;height:30%;"></a>
+            <a href="https://www.instagram.com/lescavesfaqra/" target="_blank" class="icon-link"><img src="lescaves.png"
+                    alt="lescaves" class="icon" style="width:30%;height:30%;"></a>
+
+
+
+
+            <img src="leresto.png" alt="leresto" class="icon" style="width:30%;height:30%;" uk-img="loading: eager"></a>
+
+        </div>
+
+
+
+    </div>
+
+
+
+    
+
+
+
+    <div class="container" style="display: flex; margin-top: 2em;">
+        <div class="myphoto" style="width: 45%;">
+            <img src="piscine.jpg" alt="Hotel pool" style="width: 100%; height: auto;">
+        </div>
+
+        <div class="bigtext" style=" flex-direction: column; width: 50%; margin-left: 5%;margin-bottom: 40px;">
+            <h1>We offer a variety of activities for our guests to enjoy.</h1>
+            <p style="font-size: 25px;">
+            <h3>Pool</h3>
+            <p>Relax and soak up the sun's warm rays by our beautifully designed pool. Enjoy peaceful moments, allow the
+                gentle breeze to touch your skin, and experience a tranquil oasis of relaxation.</p>
+            <h3>Gym</h3>
+            <p>Don't let your wellness goals slip while on vacation - take advantage of our top-notch gym facilities.
+                Whether you're a fitness fanatic or just want to stay active, our advanced equipment and carefully
+                designed workout areas provide all the tools you need for a satisfying exercise session. From cardio
+                machines to strength training gear, enhance your fitness regimen while enjoying your time away, so you
+                can come back feeling refreshed and invigorated.</p>
+            <h3>Spa</h3>
+            <p>Unwind and rejuvenate with our luxurious spa treatments at
+                <a href="https://cloudsthespa.com/home/">cloudsthespa</a>
+            </p>
+
+            </p>
+        </div>
+    </div>
+
+
+    <div style="background-color: grey;">
+        
+        <div class="container" style="display: flex; margin-top: 2em;">
+            
+            <div class="myphoto" style="width: 45%;">
+                <img src="reception.jpg" alt="Hotel reception" style="width: 100%; height: auto;">
+            </div>
+
+            <div class="bigtext" style=" flex-direction: column; width: 50%; margin-left: 5%;margin-bottom: 40px;">
+                <h1>Hotel Services</h1>
+                <p style="font-size: 25px;"> Unwind in the luxurious comfort of our hotel's beautifully designed rooms,
+                    where relaxation and elegance come together. Our hard-working housekeeping team is always on hand to
+                    ensure that your space is spotless and welcoming. From the moment you walk through our doors, our
+                    friendly reception staff is ready to assist you with anything you need, making check-in effortless
+                    and providing help throughout your visit. Whether you're in the mood for a late-night snack or a
+                    delicious meal, our room service menu offers a wide variety of options for your enjoyment. Forget
+                    about the hassle of parking with our convenient valet service, allowing you to explore and make the
+                    most of your time with us without the stress of finding a space. Immerse yourself in the epitome of
+                    seamless hospitality with us, where every little detail is taken care of.
+
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+<script>
+    function show_image(image_url) {
+        document.getElementById("image_id").style.backgroundImage = 'url(' + String(image_url) + ')'
+    }
+</script>
+
+</html>

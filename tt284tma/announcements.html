@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terrebrune Hotel</title>
+  <link rel="stylesheet" href="cstyle.css">
+</head>
+
+
+
+<body>
+  <div class="menu">
+    <div class="logo"><img src="loghot.png" alt="logo"></div>
+
+    <nav class="logo-name">
+      <a href="home.html">Home </a>
+      <a href="announcements.html">Announcements </a>
+      <a href="hotelinformation.html">Hotel Information </a>
+      <a href="book_your_room.html">Book Your Room </a>
+      <a href="contact.html">Contact us</a>
+    </nav>
+
+  </div>
+  <br><br><br>
+  <br><br>
+  <fieldset>
+    <div class="container" style="display: flex; margin-top: 2em;">
+      <div class="myphoto" style="width: 45%;">
+        <img src="image7.jpg" alt="Image 7" style="width: 100%; height: auto;">
+      </div>
+
+      <div class="bigtext" style="display: flex; flex-direction: column; width: 50%; margin-left: 5%;">
+        <h1> Spot the Shot </h1>
+        <p style="font-size: 25px;">Unwind and reconnect with nature this evening as the sun embarks on its daily
+          farewell.
+          Prepare to be mesmerized by a masterpiece painted across the sky. The fiery orb will descend slowly,
+          casting long shadows and bathing the world in a warm golden glow. As it dips below the horizon,
+          a breathtaking spectacle unfolds. The clouds become a canvas, ablaze with vibrant hues of orange,
+          pink, and purple, each shade bleeding into the next in a mesmerizing dance of color.
+          This magical display is fleeting, a testament to the ever-changing beauty of our world.
+          So step outside, breathe in the crisp evening air, and let the calming rhythm of the setting sun wash over
+          you.
+          This is a moment to be cherished, a reminder of the simple wonders that surround us every day.
+        </p>
+      </div>
+    </div>
+  </fieldset>
+  <fieldset>
+    <legend>News and Events Section:</legend>
+    <fieldset>
+      <div class="container" style="display: flex; margin-top: 2em;">
+        <div class="myphoto" style="width: 45%;">
+          <img src="wine.gif" alt="Image 7" style="width: 500px; height: 500px;">
+        </div>
+  
+        <div class="bigtext" style="display: flex; flex-direction: column; width: 50%; margin-left: 5%;">
+          <h1> A Wine Affair to Remember </h1>
+          <p style="font-size: 25px;">Indulge your senses with a luxurious poolside wine tasting experience. Imagine yourself basking in the warm sunshine, the gentle sound of lapping water creating a serene atmosphere. As you dip your toes in the refreshing pool, take a moment to savor a selection of exquisite wines. Our knowledgeable staff will guide you through the tasting, allowing you to discover the unique flavors and aromas of each varietal. Let the vibrant colors dance in your glass as you unwind and connect with friends or loved ones. This poolside escape is the perfect way to elevate your afternoon, combining the pleasure of a refreshing swim with the sophistication of wine exploration.
+          </p>
+        </div>
+      </div>
+    </fieldset>
+
+    <fieldset style="margin-top: 30px;">
+      <div class="container" style="display: flex;   margin-left: 0px;">
+        <div class="myphoto" style="margin-right: 60px;">
+          <img src="image8.jpg" alt="Image 8" width="600" height="600">
+        </div>
+
+        <div class="bigtext">
+          <h1> Cigar & Jazz: Asophisticated Soiree </h1>
+          <p style="font-size: 25px;">Unwind with the smooth sounds of jazz and a touch of Lebanese flair at our
+            exclusive Jazz Night! Immerse yourself in the intimate ambiance of the C Bar,
+            as talented local musicians weave a tapestry of classic and contemporary jazz tunes. Savor a curated
+            selection of light bites and handcrafted cocktails
+            inspired by the golden age of jazz. And for those who appreciate a refined indulgence, a selection of
+            premium cigars will be available for purchase at the C Bar.
+            This is a night not to be missed for music lovers and discerning guests alike.
+            Reserve your spot and let the soulful rhythms of jazz transport you to a world of
+            sophistication and delight.
+          </p>
+        </div>
+      </div>
+    </fieldset>
+  </fieldset>
+  <fieldset>
+    <legend>Special offers</legend>
+    <div>
+      <h1>Escape the city and celebrate the holidays with the Ultimate Spring Package</h1>
+
+
+      <div class="container" style="display: flex; margin-top: 2em;">
+        <div class="myphoto" style="width: 45%;">
+
+          <a href="springpackage.html" target="_blank" class="icon-link" uk-img="loading: eager"><img src="image9.jpg"
+              alt="springpackage" class="icon" style="width:900px;height:650px;" uk-img="loading: eager"></a>
+
+        </div>
+        <div style="margin-left:236px;font-size: 20px;">
+          <h2> Click the image if you want to see our spring package </h2><br>
+          <div style="font-size: 30px;">
+          <h3>Prices(per night including TVA):</h3><br>
+          
+          Deluxe Room: 330 USD <br>
+          Executive Room : 380 USD <br>
+          Majestic Room: 440 USD <br>
+          Captain Suite : 500 USD <br>
+          Terrebrune Suite : 700 USD
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </fieldset>
+
+
+
+  <div class="FAQ">
+    <h2>FAQ's section</h2>
+
+    <button class="accordion">How many Stars is your hotel?</button>
+    <div class="panel">
+      <p>Our hotel offers you a service of 5 Stars</p>
+    </div>
+
+    <button class="accordion">What time is check in check out?</button>
+    <div class="panel">
+      <p>Check in at 3:00 pm.Check out at 12:00 pm</p>
+    </div>
+
+    <button class="accordion">What is your cancelation policy?</button>
+    <div class="panel">
+      <p>A fees of 50% of the total amount must be paid</p>
+    </div>
+
+    <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+          } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+          }
+        });
+      }
+    </script>
+</body>
+
+</html>

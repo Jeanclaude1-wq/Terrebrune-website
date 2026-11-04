@@ -1,0 +1,212 @@
+body {
+    background-color: bisque;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.menu {
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    top: 0;
+}
+
+.logo-name {
+    display: flex;
+    align-items: center;
+}
+
+.logo-name h1 {
+    margin-left: 10px;
+    margin-right: auto;
+    font-family: 'Courier New', Courier, monospace;
+
+    font-size: 35px;
+}
+
+.logo-name a {
+    color:black;
+    border:1px solid white;
+    padding:5px 10px 5px 10px;
+    background-color: white;
+    border-radius: 25px;
+    margin-right: 40px;
+    position: relative;
+    font-size: 18px;
+    text-decoration: none;
+
+}
+.logo-name a:hover{
+    color:white;
+    border:1px solid black;
+    padding:5px 10px 5px 10px;
+    background-color:black;
+    border-radius: 25px;
+    margin-right: 40px;
+    position: relative;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.container-box {
+    background-color: #FFFDD0;
+    color: #FFFDD0;
+    flex: 1;
+    /* Each block will take up equal space */
+    border: 1px solid;
+    /* Add border to the blocks */
+    margin: 0 20px;
+    /* Add margin for spacing between blocks */
+    box-sizing: border-box;
+    /* Include border in the size calculation */
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-bottom: 100px;
+    margin-bottom: 100px;
+    background-image: url("office.jpg");
+}
+
+#contacts {
+    color: #FFFDD0;
+    display: flex;
+    margin-top: 20px;
+
+}
+
+.container-box p {
+    color: bisque;
+    font-size: 19px;
+    display: flex;
+    justify-content: center;
+}
+
+.container-box h3 {
+    color: bisque;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.container-box h4 {
+    color: bisque;
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+}
+
+#follow h2 {
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    font-size: 60px;
+
+}
+
+#links {
+    background-color: aliceblue;
+    text-align: center;
+}
+
+#links a {
+    background-color: aliceblue;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.container-box-chezMichel {
+    width: 50%;
+    height: 50%;
+    background-color: grey;
+    flex: 1;
+    /* Each block will take up equal space */
+
+    margin: 0 20px;
+    /* Add margin for spacing between blocks */
+
+
+    background-image: url("chezmichel.png");
+}
+
+.container-box-lescaves {
+
+    color: #FFFDD0;
+    flex: 1;
+    /* Each block will take up equal space */
+    object-fit: contain;
+
+
+
+    background-image: url("lescaves.png");
+}
+
+.container-box-leresto {
+
+    color: #FFFDD0;
+    flex: 1;
+    /* Each block will take up equal space */
+    object-fit: contain;
+
+
+
+    background-image: url("leresto.png");
+}
+
+/* Announcment*/
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 50%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    margin-top: 20px;
+    padding-right: 10px;
+    border-radius: 25px;
+
+}
+
+.active,
+.accordion:hover {
+    background-color: #ccc;
+    
+    
+
+}
+
+.panel {
+    
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    width:50%;
+    text-align: center;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    margin-top: 20px;
+    margin-left: 370px;
+    border-radius: 25px;
+}
+
+
+.FAQ h2{
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+}
+.FAQ{
+    text-align: center;
+}

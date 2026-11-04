@@ -1,0 +1,327 @@
+.menu {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  height: 100px;
+  top: 0;
+  
+}
+
+
+body {
+  background-color: bisque;
+}
+
+.slider-container {
+
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+}
+
+.slide {
+  flex: 0 0 100%;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 1;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+.logo {
+  position: top-left;
+  margin: 5px;
+}
+
+
+
+.container {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  /* Define columns: 200px for image, 1fr for remaining space */
+  gap: 10px;
+  /* Optional spacing between image and text */
+  align-items: center;
+  /* Align content vertically within cells */
+}
+
+.myphoto {
+  margin-top: 20 px;
+  margin-right:30px;
+
+}
+
+.bigtext{
+  margin-left: 20px;
+}
+#wine {
+  position: absolute;
+}
+
+#address {
+  position: absolute;
+  left: 440px;
+  top: 360px;
+}
+
+.offertext {
+  font-family: Geneva, Arial, Helvetica, sans-serif;
+  font-size: 1500pt;
+  text-align: center;
+  margin-left: 200 px;
+}
+
+.container1 {
+  background-color: grey;
+  
+  justify-content: space-evenly;
+  
+  padding: 20px;
+  width: 20%;
+  margin-top: 30px;
+
+}
+#chezmichel{
+  display: flex;
+  flex-direction: row;
+
+}
+
+.image-wrapper {
+  
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease;
+}
+
+.image:hover {
+  animation: spin 4s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.room-info {
+  display: none;
+  position: absolute;
+  background-color: #f0f0f0;
+  padding: 5px;
+  border-radius: 3px;
+  font-size: 0.8rem;
+  line-height: 1.2;
+}
+
+.room-link:hover+.room-info {
+  /* Show info on hover */
+  display: block;
+  top: 100%;
+  /* Position below the link */
+  left: 0;
+}
+
+.gallery {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.gallery img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70%;
+  height: 70%;
+  object-fit: cover;
+  /* Ensures images fill the viewport */
+  opacity: 0;
+  /* Initially hide all images */
+  transition: opacity 0.5s ease-in-out;
+}
+
+.gallery img.active {
+  opacity: 1;
+  /* Show only the active image */
+}
+
+.navigation {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.navigation button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.navigation button:hover {
+  opacity: 1;
+}
+
+.logo-name {
+  display: flex;
+  align-items: center;
+}
+
+.logo-name h1 {
+  margin-left: 10px;
+  margin-right: auto;
+  font-family: 'Courier New', Courier, monospace;
+
+  font-size: 35px;
+}
+
+.logo-name a {
+  margin-right: 40px;
+  position: relative;
+  font-size: 18px;
+  text-decoration: none;
+
+}
+
+.container-box {
+  flex: 1;
+  /* Each block will take up equal space */
+  border: 1px solid;
+  /* Add border to the blocks */
+  margin: 0 20px;
+  /* Add margin for spacing between blocks */
+  box-sizing: border-box;
+  /* Include border in the size calculation */
+  margin-left: 50px;
+  margin-right: 50px;
+  padding-bottom: 100px;
+  margin-bottom: 100px;
+
+}
+
+#contacts {
+  display: flex;
+}
+
+.container-box p {
+
+  font-size: 19px;
+  display: flex;
+  justify-content: center;
+}
+
+.container-box h3 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.container-box h4 {
+  font-size: 22px;
+  display: flex;
+  justify-content: center;
+}
+
+#follow h2 {
+  display: flex;
+  justify-content: center;
+  font-size: 60px;
+
+}
+
+#links {
+  text-align: center;
+}
+
+#links a {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.texto {
+  font-size: 15pt;
+  position: left;
+}
+
+.imago {
+  position: right;
+  background-image: url("image10.jpg");
+}
+
+.redtext {
+  color: red;
+  position: absolute;
+  left:
+    50%;
+  transform: translateX(-50%);
+  top: 500px;
+  font-size: 18px;
+}
+
+.seasons1 {
+
+  text-align: center;
+  margin-top: 740px;
+}
+#lescaves
+{
+  position: absolute;
+}
+#leresto
+{
+  position: absolute;
+}
+
+#food-image{
+  position: absolute;
+}
+
+#text1{
+  position: absolute;
+  margin-bottom: 20px;
+}
+
+
